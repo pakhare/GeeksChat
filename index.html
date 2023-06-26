@@ -1,0 +1,49 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeeksChat</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <!-- Active Users' List -->
+    <div class="sidebar">
+        <div class="sidebar-title">
+          <h4 style="color: rgb(0, 0, 0);">🟢 Active</h4>
+        </div>
+        <ul class="user-list"></ul>
+    </div>
+
+    <!-- Main Area -->
+    <div class="main">
+        <div class="title">
+            <h1>GeeksChat</h1>
+        </div>
+
+        <!-- Messages will be rendered here -->
+        <div class="messageBlock"></div>
+
+        <!-- Send Messages -->
+        <input type="file" id="file-input">
+        <div>
+            <textarea id="textarea" cols="30" rows="1" placeholder="Type a message"></textarea>
+        </div>
+    </div>
+
+    <!-- Ask for Username -->
+    <div class="popup">
+        <div class="popup-content">
+            <h2>Welcome!</h2>
+            <p>Please enter a username:</p>
+            <input type="text" id="username" placeholder="Enter your name" autofocus>
+            <button id="startChatBtn">Start Chat</button>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="client.js"></script>
+</body>
+</html>

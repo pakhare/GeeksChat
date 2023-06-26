@@ -1,0 +1,187 @@
+/* styles.css */
+
+body {
+    min-height: 100vh;
+    justify-content: center;
+    background-color: #c7c7c7;
+    align-items: center;
+    display: flex;
+    font-family: "Tahoma", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div.main {
+    margin-right: 20px;
+    margin-left: 1px;
+    max-width: 100%;
+    height: 95vh;
+    border-left: none;
+    width: 100%;
+    background: #f0f2f5;
+    box-shadow: none;
+  }
+
+.title {
+    padding: 9px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.title h1 {
+    color: #065b00;
+    font-size: 22px;
+}
+
+.messageBlock {
+    padding-top: 40px;
+    height: 76vh;
+    padding: 20px;
+    background-image: url("https://i.imgur.com/e73wnyC.png");
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+textarea {
+    background: #FBFBFB;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    width: 100%;
+    height: 7vh;
+    outline: none;
+}
+
+.popup {
+    top: 0;
+    z-index: 9999;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup-content {
+    text-align: center;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.popup-content h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.popup-content p {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.popup-content input[type="text"] {
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.popup-content button {
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #A0C49D;
+    color: #fff;
+}
+
+.popup-content button:hover {
+    background-color: #8F8BE8;
+}
+
+.message {
+    margin-bottom: 40px;
+    max-width: 300px;
+    position: relative;
+    border-radius: 4px;
+    padding: 20px;
+}
+
+.received {
+    margin-right: auto;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+.sent {
+    margin-left: auto;
+    background: #d9fdd3;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.message h4 {
+    font-size: 10px;
+    margin-left: 10px;
+    color: #333;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+}
+
+.message span {
+    padding-left: 10px;
+    margin-top: 4px;
+    text-align: right;
+    font-size: 11px;
+    display: block;
+}
+
+.message-image {
+    max-height: 200px; 
+    max-width: 200px; 
+    display: inline-block;
+}
+
+.sidebar {
+    margin-left: 20px;
+    max-width: 100%;
+    width: 30%;
+    height: 95vh;
+    background: #fff; 
+    background-position: center bottom;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  }
+
+.sidebar-title {
+    background: #f0f2f5;
+    padding: 12px;
+    align-items: center;
+    display: flex;
+}
+
+.user-list {
+    overflow-y: auto;
+    margin: 20px;
+    padding: 10px;
+    list-style-type: none;
+}
