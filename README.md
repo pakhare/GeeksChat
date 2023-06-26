@@ -1,3 +1,3 @@
 # GeeksChat
 
-![alt text](https://i.imgur.com/e73wnyC.png)
+![alt text](https://i.imgur.com/ZrtWDv7.gif)
